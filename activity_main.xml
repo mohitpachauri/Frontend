@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+<LinearLayout
+    android:id="@+id/WelcomeScreen"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical">
+    <TextView
+        android:layout_marginBottom="30dp"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:gravity="center"
+        android:text = "@string/photo_editor"
+        android:textColor = "@color/black"
+        android:textSize ="30sp"
+        />
+<Button
+    android:id = "@+id/SelectImageButton"
+    android:layout_marginBottom="20dp"
+android:layout_width="100dp"
+    android:layout_height = "100dp"
+   android:text = "@string/select_the_image"
+    />
+<Button
+    android:id = "@+id/TakePhotobutton"
+    android:layout_width = "100dp"
+    android:layout_height = "100dp"
+    android:text = "@string/take_the_photo"
+    />
+
+</LinearLayout>
+
+<LinearLayout
+
+    android:id = "@+id/editScreen"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation = "vertical"
+    android:visibility = "gone">
+    <ImageView
+        android:id = "@+id/imageView"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        />
+    <LinearLayout
+        android:layout_width = "match_parent"
+        android:layout_height= "50dp"
+        android:orientation = "horizontal">
+        <Button
+            android:id = "@+id/back"
+            android:layout_width= "0dp"
+            android:layout_height="match_parent"
+            android:layout_weight = "1"
+            android:text = "Back"
+            />
+        
+        
+        <Button
+            android:id = "@+id/blackAndWhite"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight = "1"
+            android:text ="B/W"/>
+        <Button
+            android:id = "@+id/saveImage"
+            android:layout_width = "0dp"
+            android:layout_height = "match_parent"
+            android:layout_weight = "1"
+            android:text = "Save Image"
+            />
+    </LinearLayout>
+</LinearLayout>
+</LinearLayout>
